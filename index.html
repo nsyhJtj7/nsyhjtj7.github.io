@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+        <title>Mizuho Koyanagi Portfolio</title>
+    </head>
+    <body id="pageBody">
+        <header id="header">
+            <h1>Mizuho JavaScript Portfolio</h1>
+        </header>
+        <section id="introduction">
+            <img src="../images/mizuho.jpg" id="image">
+            <p>Hello! My name is Mizuho Koyanagi. I'm from Japan. This is second year in the US university. My major is Web UX with a minor in Localization. This site is my portfolio. I am not computer person, but I am doing my best in my major. </p>
+        </section>
+        <section id="JS">
+            <h3>JavaScript Demonstration</h3>
+            <p>I am not good at coding, and I have never used JavaScript before. However, I am excited for upcoming JavaScript projects!</p>
+        </section>
+        <footer id="footer">
+            <h2>Settings</h2>
+            <p>Current Setting: <span id="currentSetting">Default</span></p>
+            <p>Mode:
+                <button onclick="defaultMode()">Default</button>
+                <button onclick="darkMode()">Dark</button>
+                <button onclick="lightMode()">Light</button>
+            </p>
+            <p id="copyright">&copy;© Copyright 2025 Mizuho Koyanagi, All rights reserved.</p>
+        </footer>
+        <script>
+            function darkMode() {
+                document.getElementById('currentSetting').innerHTML = "Dark";
+                document.getElementById('pageBody').style = "background-color: rgb(24, 24, 24); color: white;";
+                document.getElementById('header').style = "background-color: black"
+                document.getElementById('introduction').style = "background-color: rgb(24, 24, 24)";
+                document.getElementById('JS').style = "background-color: black";
+                document.getElementById('footer').style = "background-color: rgb(24, 24, 24)";
+                document.getElementById('image').style = "border: 2px solid rgb(92, 92, 92)";
+            }
+
+            function lightMode() {
+                document.getElementById('currentSetting').innerHTML = "Light";
+                document.getElementById('pageBody').style = "background-color: white; color: black;";
+                document.getElementById('header').style = "background-color: rgb(215, 214, 214)"
+                document.getElementById('introduction').style = "background-color: white";
+                document.getElementById('JS').style = "background-color: rgb(215, 214, 214)";
+                document.getElementById('footer').style = "background-color: white";
+                document.getElementById('image').style = "border: 2px solid rgb(215, 214, 214)";
+            }
+
+            function defaultMode() {
+                document.getElementById('currentSetting').innerHTML = "Default";
+                document.getElementById('pageBody').style = "background-color: rgb(211, 211, 210); color: black;";
+                document.getElementById('header').style = "background-color: lightpink"
+                document.getElementById('introduction').style = "background-color: rgb(211, 211, 210)";
+                document.getElementById('JS').style = "background-color: lightpink";
+                document.getElementById('footer').style = "background-color: rgb(211, 211, 210)";
+                document.getElementById('image').style = "border: 2px solid palevioletred"
+            }
+
+        </script>
+    </body>
+</html>

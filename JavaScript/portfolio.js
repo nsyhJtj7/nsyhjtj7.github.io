@@ -27,3 +27,25 @@ function defaultMode() {
     document.getElementById('footer').style = "background-color: rgb(211, 211, 210)";
     document.getElementById('image').style = "border: 2px solid palevioletred"
 }
+
+function perimeter() {
+    let a = document.getElementById('aperimeter').value;
+    let result = a * 4;
+
+    document.getElementById('perimeterResult').innerHTML = result;
+}
+
+function area() {
+    let a = document.getElementById('aarea').value;
+    let result = a * a;
+
+    document.getElementById('areaResult').innerHTML = result;
+}
+
+function volume() {
+    let a = document.getElementById('avolume').value;
+    let h = document.getElementById('h').value;
+    let result = 1 / 3 * h * a * a;
+
+    document.getElementById('volumeResult').innerHTML = result;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shape Area and Volume Calculator</title>
+
+        <style>
+            section.border {
+                border-bottom: 1.5px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Shape Area and Volume Calculator</h1>
+        </header>
+
+        <section class="border">
+            <table>
+                <tr>
+                    <td><h2>Perimeter Calculator</h2></td>
+                </tr>
+            
+                <tr>
+                    <td><img src="../portfolio/image/square.png"></td>
+                    <td>
+                        <p>Result: <span id='perimeterResult'></span></p>
+                        <p><label for='aperimeter'>a: </label><input type='text' id='aperimeter'></p>
+                        <button onclick='perimeter()'>Calculate</button>
+                    </td>
+                </tr>
+                
+            </table>
+        </section>
+
+        <section class="border">
+            <table>
+                <tr>
+                    <td><h2>Area Calculator</h2></td>
+                </tr>
+            
+                <tr>
+                    <td><img src="../portfolio/image/square.png"></td>
+                    <td>
+                        <p>Result: <span id='areaResult'></span></p>
+                        <p><label for='aarea'>a: </label><input type='text' id='aarea'></p>
+                        <button onclick='area()'>Calculate</button>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <table>
+                <tr>
+                    <td><h2>Volume Calculator</h2></td>
+                </tr>
+            
+                <tr>
+                    <td><img src="../portfolio/image/square_pyramid_height.png"></td>
+                    <td>
+                        <p>Result: <span id='volumeResult'></span></p>
+                        <p><label for='avolume'>a: </label><input type='text' id='avolume'></p>
+                        <p><label for='h'>h:</label><input type='text' id='h'></p>
+                        <button onclick='volume()'>Calculate</button>
+                    </td>
+                </tr>
+            </table>
+        </section>
+            
+        <script src="../portfolio/JavaScript/portfolio.js"></script>  
+    </body>
+</html>

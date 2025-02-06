@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="./CSS/styles.css">
+        <title>Tic-Tac-Toe</title>
+        <script src="./JavaScript/tictactoe.js"></script>
+        <style>
+            body {
+                align-items: center;
+                text-align: center; 
+            }
+
+            table {
+                margin: auto;
+            }
+
+            button {
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                background-color: rgb(253, 177, 206);
+                border: 2px solid rgb(252, 94, 155);
+                border-radius: 5px;
+            }
+
+            #reset {
+                width: auto;
+                height: auto;
+                margin: 10px;
+                color: white;
+                background-color: rgb(127, 126, 126);
+                border-color: rgb(62, 62, 62);
+            }
+        </style>
+    </head>
+
+    <header>
+        <h1>Tic-Tac-Toe</h1>
+    </header>
+
+    <body>
+        <p>Let's Enjoy!</p>
+        <table>
+            <tr>
+                <td><button id="a1" onclick="changeMark('a1')"></button></td>
+                <td><button id="b1" onclick="changeMark('b1')"></button></td>
+                <td><button id="c1" onclick="changeMark('c1')"></button></td>
+            </tr>
+            <tr>
+                <td><button id="a2" onclick="changeMark('a2')"></button></td>
+                <td><button id="b2" onclick="changeMark('b2')"></button></td>
+                <td><button id="c2" onclick="changeMark('c2')"></button></td>
+            </tr>
+            <tr>
+                <td><button id="a3" onclick="changeMark('a3')"></button></td>
+                <td><button id="b3" onclick="changeMark('b3')"></button></td>
+                <td><button id="c3" onclick="changeMark('c3')"></button></td>
+            </tr>
+        </table>
+        <button id="reset" onclick="resetGame()">Reset Game</button>
+        <h2 id="checkWin"></h2>
+    </body>
+</html>

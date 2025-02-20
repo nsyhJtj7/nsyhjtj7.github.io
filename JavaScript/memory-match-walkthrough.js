@@ -2,7 +2,7 @@ let map = [];
 let tile1 = null, tile2 = null;
 let rows = 4, cols = 4;
 
-const loadMap = () => {
+const loadMap = (rows = 4, cols = 4) => {
     let maxPair = (rows * cols) / 2;
     let tileNum = [];
 

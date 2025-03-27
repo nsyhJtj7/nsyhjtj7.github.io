@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+		<title>Sign Me Up</title>
+        <style>
+            body {
+                text-align: center;
+            }
+        </style>
+	</head>
+	<body>
+		<h1>Comments Submission Form</h1>
+	
+		<form id="form">
+			<label for="name">Name:</label>
+			<input
+				id="name"
+				type="text"
+				autocomplete="text"
+                pattern="[a-zA-Z\s]+"
+				placeholder="Enter your name"
+                title="alphabetical characters and spaces only"
+				required
+			>
+			<br><br>
+
+			<label for="phone">Phone Number:</label>
+			<input
+				id="phone"
+                type="tel"
+				placeholder="e.g. (XXX)XXX-XXXX"
+				pattern="[0-9\(\)\-]{10,11}"
+				title="please enter a valid phone number."
+			>
+			<br><br>
+
+			<label for="email">Email:</label>
+			<input
+				id="email"
+				name="useremail"
+				type="email"
+				autocomplete="email"
+				placeholder="i.e. myname@gmail.com"
+			>
+
+			<br><br>
+			
+			<!-- TODO: Use real-time feedback with JS -->
+			<label for="comment">Comment:</label>
+			<textarea
+				id="comment"
+				name="comment"
+				type="text"
+			></textarea>
+
+            <br><br>
+
+            <h1>Create Account</h1>
+
+            <label for="username">Username:</label>
+			<input
+				id="username"
+				name="user"
+				type="text"
+				autocomplete="username"
+			> <br>
+            <p id="warning"></p>
+			
+			<!-- TODO: Use real-time feedback with JS -->
+			<label for="password">Password:</label>
+			<input
+				id="password"
+				name="userpass"
+				type="password"
+			> <br>
+			<p id="passwordMessage"></p>
+
+			<button type="submit">Submit</button>
+		</form>
+		
+		<script src="./JavaScript/comment-submission-form.js"></script>
+	</body>
+</html>

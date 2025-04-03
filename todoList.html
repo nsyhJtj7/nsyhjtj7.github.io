@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List with APIs</title>
+    <style>
+        .task-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        ul {
+            list-style: square;
+        }
+
+        #listItems {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body id="body">
+    <h1>ToDo List with APIs</h1>
+    <input
+        type="text"
+        id="todoInput"
+        class="todo-input"
+        placeholder="Add your items"
+    />
+    <button id="addItem">Add</button>
+    <br>
+    <p id="number"></p>
+    <p id="warning"></p>
+    <ul id="listItems" class="listItems"></ul>
+    <br>
+    <h2>Mode</h2>
+    <button id="default">Default</button>
+    <button id="dark">Dark Mode</button>
+    <br>
+    <br>
+    <br>
+    <h2>Really Funny Joke</h2>
+    <button id="get">GET</button>
+    <p id="jokeSetUp"></p>
+    <p id="jokePunchline"></p>
+    <script src="./JavaScript/todoList.js"></script>
+</body>
+</html>

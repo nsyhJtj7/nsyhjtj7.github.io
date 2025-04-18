@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Hangman</title>
-  <script src="script.js"></script>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="hangman"></div>
-  <div id="word">
-
-  </div>
-  <div id="letters">
-
-  </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <title>Mizuho Koyanagi Portfolio</title>
+    </head>
+    <body id="pageBody">
+        <header id="header">
+            <h1>Mizuho JavaScript Portfolio</h1>
+        </header>
+        <section id="introduction">
+            <img src="./images/mizuho.jpg" id="image">
+            <p>Hello! My name is Mizuho Koyanagi. I'm from Japan. This is second year in the US university. My major is Web UX with a minor in Localization. This site is my portfolio. I am not computer person, but I am doing my best in my major. </p>
+        </section>
+        <section id="JS">
+            <h3>JavaScript Demonstrations</h3>
+            <p>I am not good at coding, and I have never used JavaScript before. However, I am excited for upcoming JavaScript projects!</p>
+            <ul id="javalist">
+                <li><a href="./calculator.html" target="_blank">Shape Area and Volume Calculator</a></li>
+                <li><a href="./tic-tac-toe.html" target="_blank">Tic-Tac-Toe</a></li>
+                <li><a href="./arithmetic-mean-calculator.html" target="_blank">Arithmetic Mean Calculator</a></li>
+                <li><a href="./memory-match-walkthrough.html" target="_blank">Memory Match Walkthrough</a></li>
+                <li><a href="./mastermind_with_errors.html" target="_blank">Mastermind with Errors</a></li>
+            </ul>
+        </section>
+        <footer id="footer">
+            <h2>Settings</h2>
+            <p>Current Setting: <span id="currentSetting">Default</span></p>
+            <p>Mode:6
+                <button onclick="defaultMode()">Default</button>
+                <button onclick="darkMode()">Dark</button>
+                <button onclick="lightMode()">Light</button>
+            </p>
+            <p id="copyright">&copy;© Copyright 2025 Mizuho Koyanagi, All rights reserved.</p>
+        </footer>
+        <script src="./JavaScript/portfolio.js"></script>
+    </body>
 </html>
